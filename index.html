@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ROTC중앙회봉사단 WE-SERVE">
+<meta property="og:title" content="올해도 김장, 같이 하실래요? | 중앙회봉사단 사랑의 김장나눔">
+<meta property="og:description" content="제248차 정기봉사활동 · 11.28(토) 다니엘 복지원 · 봉사·후원 절반 달성! 남은 절반 함께 채워 주세요">
+<meta property="og:image" content="https://cdn.we-serve.kr/about/yearBook/2025/rest-5.webp">
+<meta property="og:url" content="https://rotc-volunteer-corps.github.io/kimjang/">
+<meta name="twitter:card" content="summary_large_image">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>올해도 김장, 같이 하실래요? — 중앙회봉사단 사랑의 김장나눔</title>
+<meta name="description" content="대한민국ROTC중앙회봉사단 제248차 정기봉사활동 사랑의 김장나눔 — 봉사 신청, 김장 후원, 나눔 바자회 물품 후원을 한 번에.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: 캠페인 스크롤 스토리 — 사진 히어로 → 지난해 이야기 → 참여 3가지 → 현황 → 당일 안내 → 문의. 우하단 원형 CTA 고정 */
+:root{
+  --bg:#f6f7f3;
+  --surface:#ffffff;
+  --ink:#1c241f;
+  --muted:#5d6a62;
+  --line:#dfe4dc;
+  --pine:#174a33;        /* 배추 겉잎 */
+  --pine-soft:#e6efe8;
+  --chili:#c8261c;       /* 고춧가루 */
+  --chili-soft:#fbe9e6;
+  --leaf:#d7ef5a;        /* 배추 속 연두 */
+  --on-dark:#ffffff;
+  --display:"Gowun Batang","Nanum Myeongjo",serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111613;--surface:#19201c;--ink:#ecf0ea;--muted:#a3afa7;--line:#2c3630;
+  --pine:#7fc79c;--pine-soft:#1d2b23;--chili:#ff6b5c;--chili-soft:#2d1a18;--leaf:#d7ef5a;--on-dark:#ffffff;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111613;--surface:#19201c;--ink:#ecf0ea;--muted:#a3afa7;--line:#2c3630;
+  --pine:#7fc79c;--pine-soft:#1d2b23;--chili:#ff6b5c;--chili-soft:#2d1a18;--leaf:#d7ef5a;--on-dark:#ffffff;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.7;word-break:keep-all;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{text-wrap:balance;margin:0}
+.eyebrow{font-size:13px;letter-spacing:.08em;font-weight:700;color:var(--chili)}
+.btn{display:inline-flex;align-items:center;gap:10px;justify-content:center;padding:15px 26px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:var(--body);transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,.copy:focus-visible,.float:focus-visible{outline:3px solid var(--leaf);outline-offset:3px}
+.btn-chili{background:#c8261c;color:#fff;box-shadow:0 8px 20px rgba(200,38,28,.28)}
+.btn-ghost{background:rgba(255,255,255,.14);color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+.arrow{font-size:18px;line-height:1}
+
+/* HERO */
+.hero{position:relative;min-height:600px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#0f2a1d}
+.hero img{position:absolute;top:0;right:0;width:50%;height:100%;object-fit:cover;object-position:50% 22%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0f2a1d 0%,#0f2a1d 50%,rgba(15,42,29,0) 68%)}
+.hero .wrap>*{max-width:560px}
+.hero .credit{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:16px;z-index:1;font-size:12px;color:rgba(255,255,255,.75)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-block:72px 64px}
+.hero .tag{display:block;font-family:var(--body);font-size:clamp(15px,1.8vw,17px);font-weight:900;letter-spacing:-.01em;color:#fff}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,5.6vw,60px);line-height:1.28;margin:22px 0 20px;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--leaf)}
+.hero p{max-width:30em;font-size:clamp(16px,1.9vw,18px);color:rgba(255,255,255,.9);margin:0 0 30px}
+.hero p b{color:#fff}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:34px;font-size:14px;color:rgba(255,255,255,.85)}
+.facts b{color:#fff;font-weight:700}
+
+/* STORY — 편지처럼 읽히는 좁은 단 */
+.story{padding-block:96px 24px}
+.col{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.story p,.goal .ask p{font-size:clamp(17px,1.9vw,18.5px);line-height:1.95;margin:0 0 1.25em}
+.story b,.goal b{font-weight:700}
+.opener{font-family:var(--display);font-size:clamp(30px,4.4vw,44px);line-height:1.35;margin:12px 0 32px}
+mark{background:linear-gradient(transparent 58%,var(--chili-soft) 58%);color:inherit;font-weight:700;padding:0 2px}
+.chap{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:700;font-size:clamp(22px,2.8vw,28px);margin:64px 0 22px;line-height:1.4}
+.chap span{flex:none;font-family:var(--body);font-size:13px;font-weight:700;color:#fff;background:var(--pine);border-radius:99px;padding:4px 12px;letter-spacing:.04em}
+:root:not([data-theme="light"]) .chap span{background:#174a33}
+figure{margin:0}
+.wide{max-width:900px;margin:36px auto 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wide img{width:100%;display:block;border-radius:6px}
+figcaption{font-size:13px;color:var(--muted);margin-top:10px;text-align:center}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:680px;margin:36px auto 44px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.pair img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;display:block}
+.dest{list-style:none;padding:0;margin:8px 0 30px;border-top:1px solid var(--line)}
+.dest li{display:grid;grid-template-columns:minmax(0,13em) minmax(0,1fr);gap:4px 18px;padding:14px 0;border-bottom:1px solid var(--line)}
+.dest li b{color:var(--pine)}
+.dest li span{color:var(--muted);font-size:15.5px}
+
+/* GOAL */
+.goal{background:var(--surface);border-block:1px solid var(--line);padding-block:80px}
+.goal h2{font-family:var(--display);font-size:clamp(28px,4vw,42px);line-height:1.35;margin:10px 0 40px}
+.goal h2 span{color:var(--chili);font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.stat{min-width:0;display:grid;gap:8px;align-content:start}
+.stat .k{font-size:14px;color:var(--muted);font-weight:500}
+.stat .v{font-size:clamp(30px,3.8vw,42px);font-weight:900;line-height:1.15;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stat .v small{font-size:.45em;font-weight:700;margin-left:2px}
+.stat .s{font-size:14px;color:var(--muted)}
+.stat .s b{color:var(--chili)}
+.math{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:40px}
+.eq{background:var(--chili-soft);border-radius:14px;padding:20px 22px;font-size:22px;font-variant-numeric:tabular-nums;min-width:0}
+.eq b{color:var(--chili);font-weight:900}
+.eq span{display:block;font-size:14.5px;color:var(--ink);margin-top:6px}
+.dday{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.dday span{font-size:14px;font-weight:700;background:var(--pine-soft);color:var(--pine);padding:8px 14px;border-radius:99px;font-variant-numeric:tabular-nums}
+.asof{font-size:13px;color:var(--muted);margin-top:12px}
+.goal .ask{margin-top:56px}
+
+/* FAQ */
+.faq{padding-block:0 88px}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--chili);font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:12px 0 0;color:var(--muted);line-height:1.85}
+.faq h2{font-family:var(--display);font-size:clamp(26px,3.2vw,34px);margin:10px 0 24px}
+
+/* JOIN */
+.join{padding-block:64px 88px}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head h2{font-family:var(--display);font-size:clamp(26px,3.4vw,36px);line-height:1.4;margin-top:10px}
+.sec-head p{color:var(--muted);margin:12px auto 0;max-width:34em}
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.way{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px 26px 26px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.way .kind{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.way .kind span{font-size:13px;font-weight:700;color:var(--pine);background:var(--pine-soft);padding:4px 10px;border-radius:999px}
+.way .kind i{font-style:normal;font-size:13px;color:var(--muted)}
+.way h3{font-family:var(--display);font-size:25px;line-height:1.35}
+.way ul{list-style:none;padding:0;margin:0;display:grid;gap:7px;font-size:15px;color:var(--muted)}
+.way li{padding-left:14px;position:relative}
+.way li::before{content:"";position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--chili)}
+.way li b{color:var(--ink);font-weight:700}
+.meter{margin-top:auto;display:grid;gap:8px}
+.meter .row{display:flex;justify-content:space-between;align-items:baseline;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.meter .row strong{font-size:22px;color:var(--ink)}
+.bar{height:10px;border-radius:99px;background:var(--pine-soft);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:var(--pine)}
+.way .btn{width:100%}
+.acct{background:var(--chili-soft);border-radius:12px;padding:14px 16px;display:grid;gap:4px}
+.acct small{color:var(--muted);font-size:12.5px}
+.acct .num{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-weight:900;font-size:19px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.copy{font:700 12px var(--body);border:1px solid var(--chili);color:var(--chili);background:transparent;border-radius:99px;padding:4px 10px;cursor:pointer}
+.one-form{margin-top:26px;background:var(--pine);color:#fff;border-radius:18px;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.one-form p{margin:0;max-width:40em;color:rgba(255,255,255,.88)}
+.one-form p b{color:#fff}
+:root:not([data-theme="light"]) .one-form{background:#174a33}
+.one-form .btn{background:#fff;color:#174a33}
+
+/* DAY */
+.day{padding-block:88px}
+.day-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 22px 24px;display:grid;grid-template-columns:120px 1fr;gap:12px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2.5px solid var(--chili)}
+.timeline time{font-weight:700;font-variant-numeric:tabular-nums;color:var(--chili)}
+.timeline span{font-weight:500}
+.timeline small{display:block;color:var(--muted);font-size:14px;font-weight:400}
+.info{display:grid;gap:22px}
+.info h3{font-size:15px;color:var(--muted);font-weight:700;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:6px 13px;font-size:14px}
+.chips.to span{border-color:var(--pine);color:var(--pine);font-weight:500}
+.place{font-size:17px;font-weight:700}
+.place small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.day h2{font-family:var(--display);font-size:clamp(26px,3.2vw,34px);margin:10px 0 28px}
+
+/* CLOSING */
+.closing{position:relative;color:#fff;text-align:center;overflow:hidden;background:#0f2a1d}
+.closing img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.closing .wrap{position:relative;padding-block:96px}
+.closing h2{font-family:var(--display);font-size:clamp(26px,3.8vw,40px);line-height:1.45;margin-bottom:28px}
+.closing .ctas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.contact{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 28px;margin-top:36px;font-size:15px;color:rgba(255,255,255,.85)}
+.contact b{color:#fff;font-variant-numeric:tabular-nums}
+footer{padding-block:28px 110px;font-size:13px;color:var(--muted);text-align:center}
+
+/* FLOAT */
+.float{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:20;width:112px;height:112px;border-radius:50%;background:#c8261c;color:#fff;text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:15px;line-height:1.35;box-shadow:0 10px 26px rgba(200,38,28,.38);transition:transform .2s ease}
+.float:hover{transform:scale(1.05)}
+.float small{font-size:12px;font-weight:500;opacity:.9}
+
+@media (max-width:860px){
+  .ways{grid-template-columns:1fr}
+  .day-grid{grid-template-columns:1fr;gap:40px}
+  .stats,.math{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .hero{display:block;min-height:0}
+  .hero img{position:static;display:block;width:100%;height:380px;object-position:50% 18%}
+  .hero::after{display:none}
+  .hero .wrap{padding-block:30px 48px}
+  .hero .credit{top:12px;bottom:auto}
+  .hero .ctas .btn{flex:1 1 100%}
+  .timeline li{grid-template-columns:1fr;gap:0}
+  .dest li{grid-template-columns:1fr}
+  .pair{grid-template-columns:1fr 1fr;gap:8px}
+  .float{width:88px;height:88px;font-size:13px}
+  .one-form .btn{width:100%}
+}
+</style>
+
+</head>
+<body>
+<header class="hero">
+  <img src="https://cdn.we-serve.kr/about/yearBook/2025/full-17.webp" alt="2025년 김장나눔 현장에서 고무장갑을 끼고 웃고 있는 봉사자">
+  <span class="credit">2025 제7회 사랑의 김장나눔</span>
+  <div class="wrap">
+    <span class="tag">(사)대한민국ROTC사회공헌단 · 중앙회봉사단 · <span style="color:#ff5a4e">제248차</span> 정기봉사활동</span>
+    <h1>올해도 <span style="color:#ff5a4e">김장</span>,<br><em>같이 하실래요?</em></h1>
+    <p><b>6.25 참전용사와 보훈가족</b>, 쪽방촌 이웃들의<br>겨울 밥상에 올라갈 김치를 담급니다.<br>벌써 절반이 모였어요. <b>남은 절반, 같이 채워 주세요.</b></p>
+    <div class="ctas">
+      <a class="btn btn-chili" href="#join">김장나눔 함께하기 <span class="arrow">→</span></a>
+      <a class="btn btn-ghost" href="#status">지금까지의 현황</a>
+    </div>
+    <div class="facts">
+      <span><b>2026. 11. 28 (토)</b> 08:30 – 14:30</span>
+      <span><b>다니엘 복지원</b> 서울 서초구</span>
+      <span>봉사자 <b>100명</b> · 모금 <b>3,000만원</b></span>
+    </div>
+  </div>
+</header>
+
+<section class="story">
+  <div class="col">
+    <p class="eyebrow">봉사단이 드리는 편지</p>
+    <h2 class="opener">솔직히 말씀드릴게요</h2>
+    <p>김장, 요즘 직접 하시는 분 많지 않으시죠. 저희도 압니다. 사 먹는 게 더 편하고, 어쩌면 더 싸다는 것도요.</p>
+    <p>그런데 혼자 겨울을 나시는 어르신들, 쪽방에서 지내는 이웃들 얘기를 듣다 보면 자꾸 마음에 걸리는 게 있어요. 겨울 내내 밥상에 올릴 반찬이 <mark>김치 한 가지</mark>뿐인 집이 아직 있다는 거예요. 그 김치마저 떨어지면, 밥에 물 말아 드시는 날도 생기고요.</p>
+    <p>그래서 저희는 매년 이맘때가 되면 고무장갑부터 챙깁니다.</p>
+
+    <div class="chap"><span>하나</span>작년 그날 아침 이야기</div>
+    <p>2025년 11월 29일 토요일, 제241차 정기봉사활동이자 <b>제7회 사랑의 김장나눔</b>. 아침 8시 반, 다니엘 복지원 운동장에 사람들이 하나둘 모여들었어요.</p>
+    <p>까마득한 선배님도, 한참 아래 후배도 있었고요. 부모님 따라온 아이들, 처음 와 본 가족분들, 동기 손에 이끌려 온 지인분까지요. 입김을 호호 불어 가며 고무장갑을 끼는데, 그 순간부터 기수 같은 건 아무 의미가 없어지더라고요.</p>
+  </div>
+  <figure class="wide">
+    <img src="https://cdn.we-serve.kr/about/yearBook/2025/grid-44.webp" alt="다니엘학교 운동장에 김장 테이블이 줄지어 놓이고 봉사자들이 일하는 모습">
+    <figcaption>2025.11.29 · 김장 터가 된 다니엘 복지원 운동장</figcaption>
+  </figure>
+  <div class="col">
+    <p>운동장 한가득 테이블이 깔리고, 절인 배추가 담긴 비닐이 산처럼 쌓였어요. 오전 내내 다들 허리 한 번 못 펴고 버무렸습니다.</p>
+  </div>
+  <figure class="wide">
+    <img src="https://cdn.we-serve.kr/about/yearBook/2025/rest-5.webp" alt="김치 상자를 양옆에 쌓아 두고 제7회 사랑의 김장나눔 현수막 앞에 모인 봉사자 단체 사진">
+    <figcaption>그날 우리 손으로 담근 김치 상자들 앞에서</figcaption>
+  </figure>
+  <div class="col">
+    <p>사진 양옆에 쌓인 상자들 보이세요? 저게 다 그날 저희 손으로 버무린 김치예요. 마지막 상자를 올려놓고 다 같이 사진을 찍는데, 누가 먼저랄 것도 없이 다들 웃고 있더라고요.</p>
+
+    <div class="chap"><span>둘</span>김장, 처음이어도 괜찮아요</div>
+    <p>"저 김장 한 번도 안 해 봤는데요." 매년 제일 많이 듣는 말이에요. 괜찮습니다. 정말로요.</p>
+    <p>배추는 미리 절여서 준비해 둡니다. 무채, 고춧가루, 젓갈, 마늘, 생강, 쪽파를 섞은 속도 미리 만들어 두고요. 여러분이 하실 일은 <mark>잎 사이사이 속을 넣고, 겉잎으로 감싸서, 통에 담는 것</mark>. 딱 그거예요.</p>
+    <p>속을 너무 많이 넣으면 짜고, 적게 넣으면 싱거워요. 처음엔 다들 헤매요. 그러다 옆에 계신 선배님 사모님이 "이렇게, 이렇게" 한 번 보여 주시면 금방 손에 익습니다. 그렇게 말 섞다 보면 한 시간이 금방 가요.</p>
+  </div>
+  <div class="pair">
+    <figure><img src="https://cdn.we-serve.kr/about/yearBook/2025/grid-49.webp" alt="빨간 고무장갑으로 배추 잎 사이에 속을 넣는 봉사자들"><figcaption>잎 사이사이, 골고루</figcaption></figure>
+    <figure><img src="https://cdn.we-serve.kr/about/yearBook/2025/gridV-4.webp" alt="버무린 김치를 봉투에 담아 상자에 포장하는 봉사자들"><figcaption>다 버무린 김치는 바로 포장</figcaption></figure>
+  </div>
+  <div class="col">
+    <p>사실 김장은 원래 혼자 하는 일이 아니었잖아요. 옛날엔 이 집 김장 날엔 옆집이 오고, 다음 주엔 이 집이 옆집에 갔죠. 품앗이요. 그래서인지 <b>‘김장, 김치를 담그고 나누는 문화’</b>는 2013년에 유네스코 인류무형문화유산에도 올랐습니다. 담그는 것만큼 <mark>나누는 것</mark>까지가 김장이라는 거죠.</p>
+    <p>저희가 하려는 것도 딱 그겁니다.</p>
+
+    <div class="chap"><span>셋</span>이 김치가 어디로 가냐고요?</div>
+    <p>버무린 김치는 그날 바로 상자에 담겨 이분들께 갑니다.</p>
+    <ul class="dest">
+      <li><b>6.25 참전용사와 보훈가족</b><span>나라를 지켜 주신 분들께, 장교로 임관했던 저희가 드리는 인사입니다.</span></li>
+      <li><b>다니엘 복지원</b><span>올해도 김장 터를 내어 주시는 고마운 곳이에요.</span></li>
+      <li><b>엘리엘동산</b><span>함께하는 나눔처입니다.</span></li>
+      <li><b>영등포 쪽방상담소</b><span>쪽방촌 이웃들의 겨울 반찬이 됩니다.</span></li>
+      <li><b>관악구 장애인 복지관</b><span>함께하는 나눔처입니다.</span></li>
+      <li><b>꿈나무마을 파란꿈터</b><span>함께하는 나눔처입니다.</span></li>
+      <li><b>그리고, 더 많은 이웃에게</b><span>모금이 모이는 만큼, 김치가 닿는 집도 늘어납니다.</span></li>
+    </ul>
+    <p>그러니까 후원 한 건, 봉사자 한 명이 늘 때마다 <mark>김치통 하나가 더 채워지는 거예요.</mark> 저희가 이렇게 열심히 모금활동을 하고 있는 이유입니다.</p>
+
+    <div class="chap"><span>넷</span>지금 어디까지 왔냐면요</div>
+    <p>11월 3일에 모금을 시작했어요. 열흘 만에 <b>단체 4곳과 19분이 1,540만원</b>을 보내 주셨고, <b>55분</b>이 봉사를 신청해 주셨습니다. 목표의 절반을 넘었어요. 처음엔 3,000만원이 너무 큰 숫자 아닌가 걱정했는데, 이 속도라면 해볼 만하다는 생각이 듭니다.</p>
+    <p>그런데요, 솔직히 남은 절반이 더 어렵다는 것도 압니다. 처음 마음 내주신 분들은 이미 다 해주셨거든요. 이제부터는 <mark>아직 이 소식을 못 들으신 분들</mark>께 닿아야 해요.</p>
+  </div>
+</section>
+
+<section class="goal" id="status">
+  <div class="col">
+    <p class="eyebrow">남은 절반, 이렇게 채울 수 있어요</p>
+    <h2>모금 마감까지 <span id="dFundBig">12</span>일 남았습니다</h2>
+  </div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="k">김장 모금 · 23건</div><div class="v">15,400,000<small>원</small></div><div class="bar"><i style="width:51.3%"></i></div><div class="s">목표 3,000만원 · 달성률 51.3% · <b>남은 금액 1,460만원</b></div></div>
+      <div class="stat"><div class="k">봉사 신청</div><div class="v">55<small>명</small></div><div class="bar"><i style="width:55%"></i></div><div class="s">목표 100명 · <b>남은 자리 45명</b></div></div>
+      <div class="stat"><div class="k">함께한 곳</div><div class="v">11<small>개 기수</small></div><div class="bar"><i style="width:100%;opacity:.35"></i></div><div class="s">바자회 물품 <b>7곳</b> 참여 · 우리 기수도 이름을 올려 주세요</div></div>
+    </div>
+    <div class="math">
+      <div class="eq"><b>10만원</b> × <b>146명</b><span>이면 남은 1,460만원이 채워집니다</span></div>
+      <div class="eq"><b>5만원</b> × <b>292명</b><span>동문 한 분 한 분이면 충분합니다</span></div>
+      <div class="eq"><b>11개 기수</b> × <b>4~5명</b><span>이면 남은 봉사 자리 45석이 찹니다</span></div>
+    </div>
+    <div class="dday"><span id="dFund">모금 마감 11.25(수)</span><span id="dDay">김장 당일 11.28(토)</span></div>
+    <p class="asof">2026년 11월 13일(금) 아침 기준 · 신청서 접수 내용을 매일 현황에 반영합니다. 최종 집계는 모금 마감일인 11월 25일(수)입니다.</p>
+  </div>
+  <div class="col ask">
+    <p>그래서 부탁드리고 싶은 게 두 가지예요.</p>
+    <p><b>하나, 할 수 있는 만큼 함께해 주세요.</b> 봉사든, 후원이든, 집에 있는 새 물건 하나든요. 금액보다 이름 하나가 더 반갑습니다.</p>
+    <p><b>둘, 이 페이지를 딱 한 분께만 보내 주세요.</b> 동기 단톡방이든, 가족이든요. 이미 참여하신 분이라면 더더욱이요. 한 분이 한 분씩만 데려오시면, 남은 절반은 생각보다 금방 찹니다.</p>
+  </div>
+</section>
+
+<section class="join" id="join">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">함께하는 세 가지 방법</p>
+      <h2>손으로, 마음으로, 물건으로<br>각자의 방법으로 함께해 주세요</h2>
+      <p>어느 버튼을 눌러도 같은 신청서로 이어집니다. 여러 가지를 함께 고르셔도 됩니다.</p>
+    </div>
+
+    <div class="ways">
+      <article class="way">
+        <div class="kind"><span>봉사 참가</span><i>동문 · 가족 · 지인</i></div>
+        <h3>함께 버무려 주세요</h3>
+        <ul>
+          <li><b>11월 28일(토) 08:30</b> 다니엘 복지원</li>
+          <li>봉사시간 <b>6시간</b> VMS 인증</li>
+          <li>VMS 아이디가 없으면 vms.or.kr에서 미리 가입</li>
+          <li>간식 어묵꼬치, 점심 김장김치와 수육</li>
+        </ul>
+        <div class="meter">
+          <div class="row"><span>신청</span><span><strong>55</strong> / 100명</span></div>
+          <div class="bar"><i style="width:55%"></i></div>
+        </div>
+        <a class="btn btn-chili" href="https://docs.google.com/forms/d/e/1FAIpQLSdH9SejyD4XWRrCV7RZ-Fujw9T5Smehd1BCxRxMc9ihU0WiBA/viewform?usp=pp_url&amp;entry.2018210978=%EB%B4%89%EC%82%AC%20%EC%B0%B8%EA%B0%80%20%2811/28%20%ED%86%A0%2008%3A30%2C%20%EB%8B%A4%EB%8B%88%EC%97%98%20%EB%B3%B5%EC%A7%80%EC%9B%90%29" target="_blank" rel="noopener">봉사 신청하기 <span class="arrow">→</span></a>
+      </article>
+
+      <article class="way">
+        <div class="kind"><span>김장 후원</span><i>11.3 – 11.25</i></div>
+        <h3>김장 재료를 보태 주세요</h3>
+        <div class="acct">
+          <small>국민은행 · 예금주 (사)대한민국ROTC사회공헌단</small>
+          <div class="num"><span id="acctNum">867701-04-133258</span><button class="copy" id="copyBtn" type="button">계좌 복사</button></div>
+        </div>
+        <ul>
+          <li>입금 후 신청서에 <b>‘김장 모금 후원’</b>을 체크해 주세요</li>
+          <li>후원 현황표에 기수·성함으로 반영됩니다</li>
+        </ul>
+        <div class="meter">
+          <div class="row"><span>모금</span><span><strong>1,540</strong> / 3,000만원</span></div>
+          <div class="bar"><i style="width:51.3%"></i></div>
+        </div>
+        <a class="btn btn-chili" href="https://docs.google.com/forms/d/e/1FAIpQLSdH9SejyD4XWRrCV7RZ-Fujw9T5Smehd1BCxRxMc9ihU0WiBA/viewform?usp=pp_url&amp;entry.2018210978=%EA%B9%80%EC%9E%A5%20%EB%AA%A8%EA%B8%88%20%ED%9B%84%EC%9B%90" target="_blank" rel="noopener">후원 참여 알리기 <span class="arrow">→</span></a>
+      </article>
+
+      <article class="way">
+        <div class="kind"><span>바자회 물품 후원</span><i>당일 13:00</i></div>
+        <h3>나눔 바자회에 보내 주세요</h3>
+        <ul>
+          <li>새 상품 또는 깨끗한 물품</li>
+          <li>옷 · 생활용품 · 주방용품 · 잡화 · 도서 · 미개봉 식품</li>
+          <li>1~2만원 이내로 판매해 <b>봉사기금</b>으로 사용</li>
+          <li>수익금은 봉사단 홈페이지, 중고 PC·NAS 서버, 홍보에 쓰입니다</li>
+        </ul>
+        <div class="meter">
+          <div class="row"><span>참여</span><span><strong>7</strong>곳</span></div>
+          <div class="bar"><i style="width:70%"></i></div>
+        </div>
+        <a class="btn btn-chili" href="https://docs.google.com/forms/d/e/1FAIpQLSdH9SejyD4XWRrCV7RZ-Fujw9T5Smehd1BCxRxMc9ihU0WiBA/viewform?usp=pp_url&amp;entry.2018210978=%EB%82%98%EB%88%94%20%EB%B0%94%EC%9E%90%ED%9A%8C%20%EB%AC%BC%ED%92%88%20%ED%9B%84%EC%9B%90" target="_blank" rel="noopener">물품 후원 신청하기 <span class="arrow">→</span></a>
+      </article>
+    </div>
+
+    <div class="one-form">
+      <p><b>한 장의 신청서로 모두 접수됩니다.</b> 봉사 참가, 김장 후원, 바자회 물품 후원을 함께 하실 분은 통합 신청서에서 원하는 항목을 모두 골라 주세요.</p>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdH9SejyD4XWRrCV7RZ-Fujw9T5Smehd1BCxRxMc9ihU0WiBA/viewform" target="_blank" rel="noopener">통합 신청서 열기 <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="day">
+  <div class="wrap">
+    <p class="eyebrow">11월 28일, 이렇게 진행합니다</p>
+    <h2>당일 안내</h2>
+    <div class="day-grid">
+      <ol class="timeline">
+        <li><time>08:30 – 09:00</time><span>접수 · 조편성<small>도착 순서대로 조를 나눕니다</small></span></li>
+        <li><time>09:00 – 12:00</time><span>김장 및 포장<small>속 넣기, 버무리기, 포장까지 함께</small></span></li>
+        <li><time>12:00 – 13:00</time><span>점심<small>방금 담근 김장김치와 수육</small></span></li>
+        <li><time>13:00 – 14:00</time><span>나눔 바자회<small>후원 물품을 판매해 봉사기금을 마련합니다</small></span></li>
+        <li><time>14:00 – 14:30</time><span>강평</span></li>
+      </ol>
+      <div class="info">
+        <div>
+          <h3>장소</h3>
+          <p class="place" style="margin:0">다니엘 복지원<small>서울 서초구 헌릉로468길 21-16</small></p>
+        </div>
+        <div>
+          <h3>준비물</h3>
+          <div class="chips"><span>방한복</span><span>앞치마</span><span>고무장갑</span><span>목장갑</span><span>여벌 옷</span><span>갈아신을 양말</span></div>
+        </div>
+        <div>
+          <h3>김장이 전해질 곳</h3>
+          <div class="chips to"><span>6.25 참전용사 · 보훈가족</span><span>다니엘 복지원</span><span>엘리엘동산</span><span>영등포 쪽방상담소</span><span>관악구 장애인 복지관</span><span>꿈나무마을 파란꿈터</span><span>모금액에 따라 더 많은 이웃에게</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="col">
+    <p class="eyebrow">자주 물어보시는 것들</p>
+    <h2>망설여지신다면</h2>
+    <details><summary>김장을 한 번도 안 해 봤어요. 가도 될까요?</summary><p>그럼요. 배추 절이기와 속 만들기는 미리 준비해 둡니다. 현장에서는 속 넣고 버무리고 포장하는 일을 조별로 함께해요. 처음 오신 분은 경험 많은 분과 같은 조로 짜 드립니다.</p></details>
+    <details><summary>가족이나 지인과 같이 가도 되나요?</summary><p>오히려 더 반갑습니다. 신청서 기수 칸에 ‘37 000가족’처럼 함께 오시는 동문의 기수와 이름을 적어 주시면 됩니다. 학생은 학년을 적어 주세요.</p></details>
+    <details><summary>봉사시간 인증은 어떻게 받나요?</summary><p>VMS(사회복지자원봉사인증관리)로 6시간이 인증됩니다. 신청서에 VMS 아이디를 꼭 적어 주세요. 아이디가 없으면 vms.or.kr에서 미리 가입해 두시면 됩니다.</p></details>
+    <details><summary>후원금을 보냈는데, 신청서도 써야 하나요?</summary><p>네, 써 주시면 좋아요. 확인하는 데 도움이 됩니다. 신청서에서 ‘김장 모금 후원’을 체크해 주시면 후원 현황표에 기수와 성함으로 정확히 반영해 드립니다.</p></details>
+    <details><summary>바자회 물품은 어떻게 전달하나요?</summary><p>새 상품이나 깨끗한 물품이면 됩니다. 신청서에 물품과 수량만 적으시고 행사 당일 가지고 오시면 됩니다.</p></details>
+    <details><summary>당일에 못 가는데, 그래도 함께할 방법이 있을까요?</summary><p>김장 후원이나 바자회 물품 후원으로 함께하실 수 있어요. 그리고 이 페이지를 동기나 가족, 지인 한 분께 전해 주시는 것도 큰 힘이 됩니다.</p></details>
+  </div>
+</section>
+
+<section class="closing">
+  <img src="https://cdn.we-serve.kr/about/yearBook/2025/grid-54.webp" alt="">
+  <div class="wrap">
+    <h2>한 해를 마무리하는<br>가장 따뜻한 방법</h2>
+    <div class="ctas">
+      <a class="btn btn-chili" href="https://docs.google.com/forms/d/e/1FAIpQLSdH9SejyD4XWRrCV7RZ-Fujw9T5Smehd1BCxRxMc9ihU0WiBA/viewform" target="_blank" rel="noopener">지금 신청하기 <span class="arrow">→</span></a>
+    </div>
+    <div class="contact">
+      <span>사무총장 강호식(37기) <b>010-3000-9521</b></span>
+      <span>단장 이병주(34기) <b>010-5073-6617</b></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">대한민국ROTC중앙회봉사단 · (사)대한민국ROTC사회공헌단 · #사랑의김장나눔 #김장봉사 #따뜻한후원</div>
+</footer>
+
+<a class="float" href="https://docs.google.com/forms/d/e/1FAIpQLSdH9SejyD4XWRrCV7RZ-Fujw9T5Smehd1BCxRxMc9ihU0WiBA/viewform" target="_blank" rel="noopener">함께하기<small>신청 · 후원 →</small></a>
+
+<script>
+(function(){
+  var btn=document.getElementById('copyBtn'), num=document.getElementById('acctNum');
+  btn.addEventListener('click',function(){
+    var t='국민은행 867701-04-133258';
+    function done(){btn.textContent='복사됨';setTimeout(function(){btn.textContent='계좌 복사'},1800)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(num);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='선택됨 · 복사하세요'}
+    try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+  });
+  function d(y,m,dd){var now=new Date();var k=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000);var a=Date.UTC(k.getFullYear(),k.getMonth(),k.getDate());var b=Date.UTC(y,m-1,dd);return Math.round((b-a)/86400000)}
+  function lab(n){return n>0?'D-'+n:(n===0?'D-DAY':'종료')}
+  var fd=d(2026,11,25);document.getElementById('dFund').textContent='모금 마감 11.25(수) · '+lab(fd);var big=document.getElementById('dFundBig');if(fd>0){big.textContent=fd}else{big.parentNode.textContent=fd===0?'오늘이 모금 마지막 날입니다':'모금이 마감되었습니다. 함께해 주셔서 감사합니다'}
+  document.getElementById('dDay').textContent='김장 당일 11.28(토) · '+lab(d(2026,11,28));
+})();
+</script>
+
+</body>
+</html>
