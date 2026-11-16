@@ -461,7 +461,7 @@ footer{padding-block:28px 110px;font-size:13px;color:var(--muted);text-align:cen
 <script>
 /* 현황 자동 연동: 공개요약 시트(합계만, 개인정보 없음)의 웹 게시 CSV를 읽어 수치를 바꿉니다. 실패하면 위에 적힌 수치를 그대로 둡니다. */
 (function(){
-  var SRC='https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6Xa0XKtzSja1W8Voe__J9pZxPqHdzD9Qj5VuXbDtmtUMT6Zwz9sMJtACJlmC6-d1B_FQRvq_J-nAo/pub?gid=0__CSV_URL__single=true__CSV_URL__output=csv';
+  var SRC='https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6Xa0XKtzSja1W8Voe__J9pZxPqHdzD9Qj5VuXbDtmtUMT6Zwz9sMJtACJlmC6-d1B_FQRvq_J-nAo/pub?gid=0&single=true&output=csv';
   if(!SRC||SRC.indexOf('http')!==0||!window.fetch)return;
   function csv(t){var rows=[],row=[],f='',q=false;for(var i=0;i<t.length;i++){var c=t[i];if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}else if(c=='"')q=true;else if(c==','){row.push(f);f=''}else if(c=='\n'||c=='\r'){if(c=='\r'&&t[i+1]=='\n')i++;row.push(f);rows.push(row);row=[];f=''}else f+=c}if(f!==''||row.length){row.push(f);rows.push(row)}return rows}
   function n(v){v=String(v==null?'':v).replace(/[^\d.\-]/g,'');var x=parseFloat(v);return isFinite(x)?x:NaN}
