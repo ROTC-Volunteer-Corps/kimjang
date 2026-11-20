@@ -303,8 +303,8 @@ footer{padding-block:28px 110px;font-size:13px;color:var(--muted);text-align:cen
       <div class="eq"><b>5만원</b> × <b>292명</b><span>동문 한 분 한 분이면 충분합니다</span></div>
       <div class="eq"><b>11개 기수</b> × <b>4~5명</b><span>이면 남은 봉사 자리 45석이 찹니다</span></div>
     </div>
-    <div class="dday"><span id="dFund">모금 마감 11.25(수)</span><span id="dDay">김장 당일 11.28(토)</span></div>
-    <p class="asof">2026년 11월 13일(금) 아침 기준 · 신청서 접수 내용을 매일 현황에 반영합니다. 최종 집계는 모금 마감일인 11월 25일(수)입니다.</p>
+    <div class="dday"><span id="dFund">모금 마감 11.27(금)</span><span id="dDay">김장 당일 11.28(토)</span></div>
+    <p class="asof">2026년 11월 13일(금) 아침 기준 · 신청서 접수 내용을 매일 현황에 반영합니다. 최종 집계는 모금 마감일인 11월 27일(금)입니다.</p>
   </div>
   <div class="col ask">
     <p>그래서 딱 두 가지만 부탁할게.</p>
@@ -339,7 +339,7 @@ footer{padding-block:28px 110px;font-size:13px;color:var(--muted);text-align:cen
       </article>
 
       <article class="way">
-        <div class="kind"><span>김장 후원</span><i>11.3 – 11.25</i></div>
+        <div class="kind"><span>김장 후원</span><i>11.3 – 11.27</i></div>
         <h3>김장 재료를 보태 주세요</h3>
         <div class="acct">
           <small>국민은행 · 예금주 (사)대한민국ROTC사회공헌단</small>
@@ -444,7 +444,7 @@ footer{padding-block:28px 110px;font-size:13px;color:var(--muted);text-align:cen
   });
   function d(y,m,dd){var now=new Date();var k=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000);var a=Date.UTC(k.getFullYear(),k.getMonth(),k.getDate());var b=Date.UTC(y,m-1,dd);return Math.round((b-a)/86400000)}
   function lab(n){return n>0?'D-'+n:(n===0?'D-DAY':'종료')}
-  var fd=d(2026,11,25);document.getElementById('dFund').textContent='모금 마감 11.25(수) · '+lab(fd);var big=document.getElementById('dFundBig');if(fd>0){big.textContent=fd}else{big.parentNode.textContent=fd===0?'오늘이 모금 마지막 날입니다':'모금이 마감되었습니다. 함께해 주셔서 감사합니다'}
+  var fd=d(2026,11,27);document.getElementById('dFund').textContent='모금 마감 11.27(금) · '+lab(fd);var big=document.getElementById('dFundBig');if(fd>0){big.textContent=fd}else{big.parentNode.textContent=fd===0?'오늘이 모금 마지막 날입니다':'모금이 마감되었습니다. 함께해 주셔서 감사합니다'}
   document.getElementById('dDay').textContent='김장 당일 11.28(토) · '+lab(d(2026,11,28));
 })();
 </script>
