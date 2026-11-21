@@ -44,8 +44,8 @@ h1 .r{color:#ff5a4c}
 .tg2{font-size:13.5px;font-weight:700;opacity:.95}
 .body{padding:14px 20px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
 .dday{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.dday b{background:var(--chili);color:#fff;font-size:15px;padding:6px 12px;border-radius:8px;font-weight:900}
-.dday span{font-size:13.5px;color:var(--muted)}
+.dday b{flex:none;white-space:nowrap;background:var(--chili);color:#fff;font-size:15px;padding:6px 12px;border-radius:8px;font-weight:900}
+.dday span{font-size:clamp(11.5px,3.4vw,13.5px);color:var(--muted);text-align:right;letter-spacing:-.02em}
 .gauge{display:flex;align-items:center;gap:16px;background:#fbf3f1;border-radius:16px;padding:6px 14px}
 .jar{width:92px;height:115px;flex:none}
 #fillG{transition:transform 1.8s cubic-bezier(.2,.8,.2,1)}
