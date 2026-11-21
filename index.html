@@ -7,9 +7,11 @@
 <meta name="description" content="대한민국ROTC중앙회봉사단(위서브·WE-SERVE) 제248차 정기봉사 사랑의 김장나눔. 11월 28일(토) 다니엘복지원. 김장 모금 후원(11월 27일 마감)과 봉사 신청에 함께해 주세요.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ROTC중앙회봉사단 WE-SERVE">
-<meta property="og:title" content="김치통이 아직 절반만 찼습니다 | 사랑의 김장나눔">
-<meta property="og:description" content="모금 마감 11.27(금) · 김장 11.28(토) 다니엘복지원 · 김장 모금 후원에 동참해 주세요">
-<meta property="og:image" content="https://cdn.we-serve.kr/about/yearBook/2025/rest-5.webp">
+<meta property="og:title" content="🥬 함께해 주세요! 김장 후원, 이제 5일 남았습니다">
+<meta property="og:description" content="이웃에게 온기를 전할 김치통이 아직 절반만 찼습니다. 11.27(금) 마감 · 11.28(토) 다니엘복지원">
+<meta property="og:image" content="https://rotc-volunteer-corps.github.io/kimjang/kakao_og_d5.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://rotc-volunteer-corps.github.io/kimjang/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,27 +24,44 @@
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);word-break:keep-all;-webkit-text-size-adjust:100%}
 .page{max-width:460px;margin:0 auto;min-height:100svh;background:#fff;display:flex;flex-direction:column;box-shadow:0 0 40px rgba(0,0,0,.08)}
-.hero{position:relative;height:clamp(240px,36svh,340px);background:#0f2a1d url(https://cdn.we-serve.kr/about/yearBook/2025/grid-54.webp) center 40%/cover no-repeat;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:20px 22px 22px}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,20,.15) 0%,rgba(10,30,20,.25) 40%,rgba(10,30,20,.88) 100%)}
+.hero{position:relative;height:clamp(250px,34svh,330px);background:#0f2a1d;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:20px 22px 22px}
+.hero>.ph{position:absolute;inset:0;background:url(https://cdn.we-serve.kr/about/yearBook/2025/grid-54.webp) center 40%/cover no-repeat;filter:saturate(1.2) contrast(1.1) brightness(1.06)}
+.hero>.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(8,24,16,.2) 25%,rgba(8,24,16,.62) 50%,rgba(8,24,16,.9) 100%)}
 .hero>*{position:relative}
+.hero>.ph,.hero>.shade{position:absolute}
 .pill{position:absolute;top:16px;left:18px;font-size:12.5px;font-weight:700;background:rgba(255,255,255,.92);color:var(--pine);padding:6px 12px;border-radius:999px}
 .lead{font-size:15px;opacity:.95;margin:0 0 6px}
 h1{margin:0;font-size:clamp(27px,7.6vw,34px);line-height:1.28;font-weight:900;letter-spacing:-.02em}
 h1 em{font-style:normal;color:var(--leaf)}
-h1 .r{color:#ff4d40}
-.body{padding:16px 20px 18px;display:flex;flex-direction:column;gap:12px;flex:1}
+h1 .r{color:#ff5a4c}
+.lead,h1{text-shadow:0 2px 10px rgba(0,0,0,.45)}
+.left{margin:10px 0 0;align-self:flex-start;font-size:clamp(19px,5.4vw,23px);font-weight:900;color:#fff;background:#c8261c;padding:5px 14px 6px;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.3)}
+.left b{color:#fff200}
+.together{position:relative;display:flex;flex-direction:column;justify-content:center;height:80px;padding:0 22px;text-decoration:none;color:#fff;background:#7a1a10 url(https://cdn.we-serve.kr/about/yearBook/2025/grid-49.webp) center 88%/cover no-repeat;overflow:hidden}
+.together:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(150,20,10,.92) 0%,rgba(150,20,10,.6) 62%,rgba(150,20,10,.2) 100%)}
+.together>*{position:relative}
+.tg1{font-size:clamp(26px,7.4vw,32px);font-weight:900;letter-spacing:-.02em;line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.tg2{font-size:13.5px;font-weight:700;opacity:.95}
+.body{padding:14px 20px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
 .dday{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .dday b{background:var(--chili);color:#fff;font-size:15px;padding:6px 12px;border-radius:8px;font-weight:900}
 .dday span{font-size:13.5px;color:var(--muted)}
-.amt{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
-.amt strong{font-size:34px;font-weight:900;color:var(--pine);letter-spacing:-.02em}
-.amt strong small{font-size:17px;font-weight:700}
-.amt>span{font-size:14px;color:var(--muted)}
-.bar{height:14px;background:#e6ebe3;border-radius:999px;overflow:hidden}
-.bar i{display:block;height:100%;width:53.6%;background:linear-gradient(90deg,#2e7d4f,var(--pine));border-radius:999px}
-.sub{display:flex;justify-content:space-between;font-size:13.5px;color:var(--muted);margin-top:-6px}
-.sub b{color:var(--chili)}
-.acct{border:2px solid var(--pine);border-radius:14px;padding:10px 14px 12px;text-align:center;background:#f6faf6}
+.gauge{display:flex;align-items:center;gap:16px;background:#fbf3f1;border-radius:16px;padding:6px 14px}
+.jar{width:92px;height:115px;flex:none}
+#fillG{transition:transform 1.8s cubic-bezier(.2,.8,.2,1)}
+.wave{animation:wv 3s linear infinite}
+@keyframes wv{from{transform:translateX(0)}to{transform:translateX(60px)}}
+@media (prefers-reduced-motion:reduce){.wave{animation:none}#fillG{transition:none}}
+.ginfo{min-width:0}
+.glab{font-size:15px;font-weight:700;color:var(--ink)}
+.glab b{color:var(--chili);font-weight:900}
+.ginfo strong{display:block;font-size:36px;font-weight:900;color:var(--chili);letter-spacing:-.02em;line-height:1.15}
+.ginfo strong small{font-size:18px;font-weight:700;color:var(--ink);margin-left:2px}
+.gs{font-size:13.5px;color:var(--muted);line-height:1.6}
+.gs b{color:var(--chili)}
+.acct{position:relative;border:2px solid var(--pine);border-radius:14px;padding:10px 14px 12px;text-align:center;background:#fff8f3;overflow:hidden}
+.acct .plate{position:absolute;right:-4px;top:-2px;width:96px;height:auto;pointer-events:none}
+.acct>*:not(.plate){position:relative}
 .acct .l{font-size:13px;color:var(--muted);font-weight:700}
 .acct .n{white-space:nowrap;font-size:clamp(24px,7.6vw,32px);font-weight:900;letter-spacing:-.01em;margin:4px 0 2px;color:var(--ink)}
 .acct .h{font-size:12.5px;color:var(--muted)}
@@ -60,22 +79,62 @@ h1 .r{color:#ff4d40}
 <body>
 <main class="page">
   <section class="hero">
+    <div class="ph"></div><div class="shade"></div>
     <span class="pill">🥬 사랑의 김장나눔 · 제248차 정기봉사</span>
-    <p class="lead">❄️ 영하의 겨울이 시작되었습니다</p>
-    <h1>이웃에게 <span class="r">온기</span>를 전할 <span class="r">김치통</span>이<br><em>아직 절반만</em> 찼습니다</h1>
+    <p class="lead">❄️ 영하의 겨울, 도움이 절실한 이웃이 있습니다</p>
+    <h1>이웃에게 <span class="r">온기</span>를 전할<br><span class="r">김치통</span>이 <em>아직 절반만</em><br>찼습니다</h1>
+    <p class="left">⏳ 이제 <b id="left">5일</b> 남았습니다</p>
   </section>
 
-  <section class="body">
-    <div class="dday"><b id="dd">모금 마감 D-5</b><span>11. 27(금)까지 · 김장 11. 28(토)</span></div>
+  <a class="together" href="#acctNum"><span class="tg1">🥬 함께해 주세요</span><span class="tg2">손을 보탠 만큼, 이웃의 겨울이 따뜻해집니다</span></a>
 
-    <div>
-      <div class="amt"><strong><span id="tot">1,609</span><small>만원 모였어요</small></strong><span>목표 <span id="goal">3,000</span>만원 · <b id="rate" style="color:var(--chili)">53.6%</b></span></div>
-      <div class="bar" role="img" aria-label="모금 진행률"><i id="bar"></i></div>
+  <section class="body">
+    <div class="dday"><b id="dd">모금 마감 D-5</b><span>11. 27(금)까지 · 김장 11. 28(토) 08:30</span></div>
+
+    <div class="gauge">
+      <svg class="jar" viewBox="0 0 120 150" role="img" aria-label="김치통 모금 진행률">
+        <defs><symbol id="cab" viewBox="0 0 120 60"><defs><linearGradient id="cabg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff6d8"/><stop offset=".55" stop-color="#f2dc8e"/><stop offset=".8" stop-color="#8fc24d"/><stop offset="1" stop-color="#4f8f2c"/></linearGradient><clipPath id="cabc"><path d="M10 32 C10 20 20 12 30 11 q2.5 -1.2 5.0 -0.4 q2.8 -1.8 5.6 0.2 q3.0 -1.7 6.0 0.7 q3.3 -1.9 6.6 0.4 q3.7 -3.3 7.5 -0.2 q3.6 -1.9 7.1 -0.9 q3.5 -2.6 7.1 1.0 q3.7 -3.6 7.4 0.1 q3.9 -1.9 7.8 0.4 q3.4 -1.3 6.7 1.0 q3.1 -3.0 6.1 0.8 q3.0 -3.5 6.0 -0.3 C114 14 118 26 116 34 C114 46 100 54 80 55 C56 57 26 56 16 50 C11 46 10 40 10 32Z"/></clipPath></defs><path d="M10 32 C10 20 20 12 30 11 q2.5 -1.2 5.0 -0.4 q2.8 -1.8 5.6 0.2 q3.0 -1.7 6.0 0.7 q3.3 -1.9 6.6 0.4 q3.7 -3.3 7.5 -0.2 q3.6 -1.9 7.1 -0.9 q3.5 -2.6 7.1 1.0 q3.7 -3.6 7.4 0.1 q3.9 -1.9 7.8 0.4 q3.4 -1.3 6.7 1.0 q3.1 -3.0 6.1 0.8 q3.0 -3.5 6.0 -0.3 C114 14 118 26 116 34 C114 46 100 54 80 55 C56 57 26 56 16 50 C11 46 10 40 10 32Z" fill="url(#cabg)"/><g clip-path="url(#cabc)"><g fill="none" stroke="#fff8dc" stroke-width="1.5" opacity=".85"><path d="M14 26.0 C40 20.0 76 12.0 112 16.0"/><path d="M14 29.2 C40 23.2 76 18.4 112 22.4"/><path d="M14 32.4 C40 26.4 76 24.8 112 28.8"/><path d="M14 35.6 C40 29.6 76 31.2 112 35.2"/><path d="M14 38.8 C40 32.8 76 37.6 112 41.6"/><path d="M14 42.0 C40 36.0 76 44.0 112 48.0"/><path d="M14 45.2 C40 39.2 76 50.4 112 54.4"/></g><rect x="18" y="0" width="110" height="60" fill="#d6301a" opacity=".7"/><g stroke="#9e140b" stroke-width="1.2" stroke-linecap="round" opacity=".7"><path d="M60.6 26.6 l4.8 0.1"/><path d="M87.6 47.6 l2.2 -0.5"/><path d="M72.5 34.3 l3.3 -0.6"/><path d="M103.8 18.0 l3.1 -0.3"/><path d="M81.8 49.3 l3.5 -0.7"/><path d="M58.5 26.2 l3.1 -0.2"/><path d="M51.9 35.1 l3.8 -0.5"/><path d="M103.6 32.5 l4.6 0.3"/><path d="M79.1 34.6 l3.5 0.4"/><path d="M106.6 30.3 l4.1 -0.5"/><path d="M74.8 28.6 l3.0 -0.2"/><path d="M93.5 47.6 l2.3 0.6"/><path d="M29.0 30.6 l2.5 -0.8"/><path d="M111.7 23.9 l3.9 -0.7"/><path d="M63.1 37.3 l2.4 0.8"/><path d="M101.6 48.1 l4.7 0.8"/><path d="M90.5 25.9 l2.0 -0.5"/><path d="M28.8 16.1 l3.9 -0.5"/><path d="M88.7 33.6 l4.1 -0.5"/><path d="M101.4 24.5 l3.1 0.8"/><path d="M32.7 33.6 l2.0 0.8"/><path d="M79.3 49.2 l2.1 0.8"/><path d="M38.9 50.9 l3.7 0.4"/><path d="M46.0 24.0 l2.6 0.1"/><path d="M26.7 43.7 l4.1 0.4"/><path d="M66.8 17.2 l2.3 0.8"/><path d="M33.8 40.8 l4.7 -0.9"/><path d="M101.5 47.0 l5.0 0.9"/><path d="M90.8 31.1 l2.7 0.5"/><path d="M101.4 30.3 l2.7 -0.2"/><path d="M101.8 36.1 l3.1 0.2"/><path d="M88.1 28.1 l4.2 -0.2"/><path d="M39.9 27.2 l5.0 1.0"/><path d="M78.9 47.4 l4.8 -0.6"/><path d="M80.1 20.9 l3.5 0.1"/><path d="M91.4 50.0 l3.4 -0.6"/><path d="M62.2 22.0 l4.0 0.0"/><path d="M72.5 34.2 l4.3 -0.3"/><path d="M89.6 16.9 l2.9 0.1"/><path d="M40.2 42.0 l2.9 -0.5"/><path d="M81.4 31.5 l2.2 0.5"/><path d="M96.1 49.0 l4.7 0.4"/><path d="M108.3 16.9 l4.3 0.2"/><path d="M87.2 48.3 l2.1 -0.7"/><path d="M29.2 19.9 l2.3 -1.0"/><path d="M76.5 50.0 l2.6 -0.7"/></g><g fill="#5c0904" opacity=".7"><circle cx="38.6" cy="40.3" r="0.9"/><circle cx="62.0" cy="51.8" r="1.0"/><circle cx="82.0" cy="43.9" r="1.0"/><circle cx="58.3" cy="18.2" r="0.9"/><circle cx="94.3" cy="51.1" r="0.8"/><circle cx="105.1" cy="34.3" r="0.8"/><circle cx="39.3" cy="37.7" r="0.8"/><circle cx="27.2" cy="25.8" r="1.2"/><circle cx="71.2" cy="33.3" r="1.4"/><circle cx="26.9" cy="30.9" r="0.9"/><circle cx="20.4" cy="16.2" r="1.0"/><circle cx="28.4" cy="24.4" r="1.3"/><circle cx="91.5" cy="43.5" r="1.0"/><circle cx="98.7" cy="50.6" r="1.3"/><circle cx="80.9" cy="36.6" r="0.9"/><circle cx="57.4" cy="33.9" r="1.0"/><circle cx="72.2" cy="42.0" r="1.2"/><circle cx="78.2" cy="42.2" r="1.3"/><circle cx="97.8" cy="51.6" r="1.0"/><circle cx="64.8" cy="50.5" r="1.4"/><circle cx="52.9" cy="18.9" r="0.9"/><circle cx="101.2" cy="41.5" r="1.2"/><circle cx="107.9" cy="44.3" r="0.8"/><circle cx="41.9" cy="44.7" r="0.8"/><circle cx="104.2" cy="44.8" r="1.1"/><circle cx="85.5" cy="35.3" r="1.0"/></g><g stroke="#3d8a2a" stroke-width="1.8" stroke-linecap="round" opacity=".9"><path d="M48 30 l14 -3"/><path d="M70 42 l15 -2"/><path d="M36 44 l10 -4"/></g><ellipse cx="14" cy="34" rx="7" ry="13" fill="#fff8e0" opacity=".8"/></g><path d="M10 32 C10 20 20 12 30 11 q2.5 -1.2 5.0 -0.4 q2.8 -1.8 5.6 0.2 q3.0 -1.7 6.0 0.7 q3.3 -1.9 6.6 0.4 q3.7 -3.3 7.5 -0.2 q3.6 -1.9 7.1 -0.9 q3.5 -2.6 7.1 1.0 q3.7 -3.6 7.4 0.1 q3.9 -1.9 7.8 0.4 q3.4 -1.3 6.7 1.0 q3.1 -3.0 6.1 0.8 q3.0 -3.5 6.0 -0.3 C114 14 118 26 116 34 C114 46 100 54 80 55 C56 57 26 56 16 50 C11 46 10 40 10 32Z" fill="none" stroke="#8c120a" stroke-width="1" opacity=".35"/></symbol>
+          <clipPath id="jarIn"><rect x="13" y="41" width="94" height="99" rx="11"/></clipPath>
+          <linearGradient id="kim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8402e"/><stop offset=".6" stop-color="#c22616"/><stop offset="1" stop-color="#8f130b"/></linearGradient>
+          <linearGradient id="gloss" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        </defs>
+        <rect x="10" y="38" width="100" height="105" rx="13" fill="#eef4f0" stroke="#174a33" stroke-width="3"/>
+        <g clip-path="url(#jarIn)">
+          <g id="fillG" style="transform:translateY(99px)">
+            <g class="wave"><path d="M-120 41 q15 -7 30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 t30 0 V150 H-120 Z" fill="url(#kim)"/></g>
+            <use href="#cab" x="6" y="44" width="62" height="31"/>
+            <use href="#cab" x="60" y="46" width="62" height="31"/>
+            <use href="#cab" x="-8" y="64" width="62" height="31"/>
+            <use href="#cab" x="46" y="66" width="62" height="31"/>
+            <use href="#cab" x="6" y="84" width="62" height="31"/>
+            <use href="#cab" x="60" y="86" width="62" height="31"/>
+            <use href="#cab" x="-8" y="104" width="62" height="31"/>
+            <use href="#cab" x="46" y="106" width="62" height="31"/>
+            <use href="#cab" x="6" y="122" width="62" height="31"/>
+            <use href="#cab" x="60" y="124" width="62" height="31"/>
+          </g>
+        </g>
+        <rect x="17" y="46" width="9" height="88" rx="4.5" fill="url(#gloss)"/>
+        <g stroke="#174a33" stroke-width="1" opacity=".18"><line x1="40" y1="44" x2="40" y2="138"/><line x1="60" y1="44" x2="60" y2="138"/><line x1="80" y1="44" x2="80" y2="138"/></g>
+        <line x1="16" y1="44" x2="104" y2="44" stroke="#174a33" stroke-width="1.5" stroke-dasharray="4 4" opacity=".5"/>
+        <rect x="3" y="22" width="114" height="18" rx="6" fill="#1e5c3f"/>
+        <rect x="8" y="35" width="104" height="5" rx="2.5" fill="#174a33"/>
+        <rect x="0" y="27" width="9" height="24" rx="3" fill="#2e7d4f" stroke="#174a33" stroke-width="1.5"/>
+        <rect x="111" y="27" width="9" height="24" rx="3" fill="#2e7d4f" stroke="#174a33" stroke-width="1.5"/>
+        <rect x="38" y="15" width="44" height="10" rx="4" fill="#2e7d4f"/>
+        <text x="60" y="34.5" text-anchor="middle" font-size="10" font-weight="700" fill="#d7ef5a">목표 3,000만원</text>
+        <text id="jarPct" x="60" y="100" text-anchor="middle" font-size="27" font-weight="900" fill="#1c241f" paint-order="stroke" stroke="#fff" stroke-width="5">55%</text>
+      </svg>
+      <div class="ginfo">
+        <div class="glab">김치통이 <b id="rate">55.0%</b> 찼어요</div>
+        <strong><span id="tot">1,649</span><small>만원</small></strong>
+        <div class="gs">채울 곳 <b id="rem">1,351만원</b></div>
+        <div class="gs">후원 <b id="cnt">31</b>건 · 봉사 <b id="sg">88</b>/<span id="cap">100</span>명</div>
+      </div>
     </div>
-    <div class="sub"><span>후원 <b id="cnt">29</b>건 · 남은 금액 <b id="rem">1,391만원</b></span><span>봉사 <b id="sg">88</b>/<span id="cap">100</span>명</span></div>
 
     <div class="acct">
-      <div class="l">💳 김장 모금 후원 계좌</div>
+      <svg class="plate" viewBox="0 0 120 92" aria-hidden="true"><defs><radialGradient id="pl" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#4a3328"/><stop offset=".8" stop-color="#2c1d16"/><stop offset="1" stop-color="#1c120d"/></radialGradient></defs><ellipse cx="62" cy="62" rx="56" ry="26" fill="url(#pl)"/><ellipse cx="62" cy="58" rx="46" ry="18" fill="#5a1a10" opacity=".55"/><use href="#cab" x="6" y="22" width="80" height="40" transform="rotate(-14 46 42)"/><use href="#cab" x="30" y="36" width="84" height="42" transform="rotate(-8 72 57)"/></svg><div class="l">김장 모금 후원 계좌</div>
       <div class="l" style="color:var(--ink);font-size:15px;margin-top:4px">국민은행</div><div class="n" id="acctNum">867701-04-133258</div>
       <div class="h">예금주 (사)ROTC사회공헌단_중앙회봉사단 지정계좌</div>
       <button class="copy" id="copyBtn" type="button">계좌번호 복사</button>
@@ -102,7 +161,10 @@ h1 .r{color:#ff4d40}
   var now=new Date(),k=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000);
   var n=Math.round((Date.UTC(2026,10,27)-Date.UTC(k.getFullYear(),k.getMonth(),k.getDate()))/86400000);
   document.getElementById('dd').textContent=n>0?'모금 마감 D-'+n:(n===0?'오늘 모금 마감':'모금 마감');
+  var L=document.getElementById('left');if(L){if(n>0)L.textContent=n+'일';else L.parentNode.innerHTML=n===0?'⏳ <b>오늘</b>이 마지막 날입니다':'함께해 주셔서 감사합니다';}
 })();
+function fillJar(p){p=Math.max(0,Math.min(100,p));var g=document.getElementById('fillG');if(g)g.style.transform='translateY('+(99-99*p/100)+'px)';var t=document.getElementById('jarPct');if(t)t.textContent=Math.round(p)+'%'}
+setTimeout(function(){fillJar(55.0)},150);
 /* 현황 자동 연동: 공개요약 탭(합계만, 개인정보 없음)의 웹 게시 CSV. 실패하면 위 수치 유지 */
 (function(){
   var SRC='https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6Xa0XKtzSja1W8Voe__J9pZxPqHdzD9Qj5VuXbDtmtUMT6Zwz9sMJtACJlmC6-d1B_FQRvq_J-nAo/pub?gid=0&single=true&output=csv';
@@ -117,7 +179,7 @@ h1 .r{color:#ff4d40}
     var rate=T/O*100,rem=Math.max(0,O-T);
     set('tot',man(T));set('goal',man(O));set('rate',rate.toFixed(1)+'%');set('cnt',K);
     set('rem',rem>0?man(rem)+'만원':'목표 달성!');set('sg',S);set('cap',C);
-    document.getElementById('bar').style.width=Math.min(100,rate)+'%';
+    fillJar(rate);
   }).catch(function(){});
 })();
 </script>
