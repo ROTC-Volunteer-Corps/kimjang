@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>함께 담근 김장 한 통이 이웃의 온기가 됩니다 — 사랑의 김장나눔 | ROTC중앙회봉사단 위서브</title>
+<title>김치통이 아직 절반만 찼습니다 — 사랑의 김장나눔 | ROTC중앙회봉사단 위서브</title>
 <meta name="description" content="대한민국ROTC중앙회봉사단(위서브·WE-SERVE) 제248차 정기봉사 사랑의 김장나눔. 11월 28일(토) 다니엘복지원. 김장 모금 후원(11월 27일 마감)과 봉사 신청에 함께해 주세요.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ROTC중앙회봉사단 WE-SERVE">
-<meta property="og:title" content="함께 담근 김장 한 통이 이웃의 온기가 됩니다 | 사랑의 김장나눔">
+<meta property="og:title" content="김치통이 아직 절반만 찼습니다 — 이제 며칠 남지 않았습니다 | 사랑의 김장나눔">
 <meta property="og:description" content="모금 마감 11.27(금) · 김장 11.28(토) 다니엘복지원 · 김장 모금 후원에 동참해 주세요">
 <meta property="og:image" content="https://cdn.we-serve.kr/about/yearBook/2025/rest-5.webp">
 <meta property="og:url" content="https://rotc-volunteer-corps.github.io/kimjang/">
@@ -23,7 +23,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);word-break:keep-all;-webkit-text-size-adjust:100%}
 .page{max-width:460px;margin:0 auto;min-height:100svh;background:#fff;display:flex;flex-direction:column;box-shadow:0 0 40px rgba(0,0,0,.08)}
-.hero{position:relative;height:clamp(205px,28svh,290px);background:#0f2a1d;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:20px 22px 22px}
+.hero{position:relative;height:clamp(250px,34svh,330px);background:#0f2a1d;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:20px 22px 22px}
 .hero>.ph{position:absolute;inset:0;background:url(https://cdn.we-serve.kr/about/yearBook/2025/grid-54.webp) center 40%/cover no-repeat;filter:saturate(1.2) contrast(1.1) brightness(1.06)}
 .hero>.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(8,24,16,.2) 25%,rgba(8,24,16,.62) 50%,rgba(8,24,16,.9) 100%)}
 .hero>*{position:relative}
@@ -34,6 +34,8 @@ h1{margin:0;font-size:clamp(27px,7.6vw,34px);line-height:1.28;font-weight:900;le
 h1 em{font-style:normal;color:var(--leaf)}
 h1 .r{color:#ff5a4c}
 .lead,h1{text-shadow:0 2px 10px rgba(0,0,0,.45)}
+.left{margin:10px 0 0;align-self:flex-start;font-size:clamp(19px,5.4vw,23px);font-weight:900;color:#fff;background:#c8261c;padding:5px 14px 6px;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.3)}
+.left b{color:#fff200}
 .together{position:relative;display:flex;flex-direction:column;justify-content:center;height:80px;padding:0 22px;text-decoration:none;color:#fff;background:#7a1a10 url(https://cdn.we-serve.kr/about/yearBook/2025/grid-49.webp) center 88%/cover no-repeat;overflow:hidden}
 .together:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(150,20,10,.92) 0%,rgba(150,20,10,.6) 62%,rgba(150,20,10,.2) 100%)}
 .together>*{position:relative}
@@ -43,7 +45,7 @@ h1 .r{color:#ff5a4c}
 .dday{display:flex;align-items:center;justify-content:space-between;gap:10px}
 .dday b{background:var(--chili);color:#fff;font-size:15px;padding:6px 12px;border-radius:8px;font-weight:900}
 .dday span{font-size:13.5px;color:var(--muted)}
-.gauge{display:flex;align-items:center;gap:16px;background:#fbf3f1;border-radius:16px;padding:8px 14px}
+.gauge{display:flex;align-items:center;gap:16px;background:#fbf3f1;border-radius:16px;padding:6px 14px}
 .jar{width:92px;height:115px;flex:none}
 #fillG{transition:transform 1.8s cubic-bezier(.2,.8,.2,1)}
 .wave{animation:wv 3s linear infinite}
@@ -79,13 +81,14 @@ h1 .r{color:#ff5a4c}
     <div class="ph"></div><div class="shade"></div>
     <span class="pill">🥬 사랑의 김장나눔 · 제248차 정기봉사</span>
     <p class="lead">❄️ 영하의 겨울, 도움이 절실한 이웃이 있습니다</p>
-    <h1>함께 담근 <span class="r">김장</span> 한 통이<br>이웃의 겨울을 지키는<br><span class="r">온기</span>가 됩니다</h1>
+    <h1>이웃에게 <span class="r">온기</span>를 전할<br><span class="r">김치통</span>이 <em>아직 절반만</em><br>찼습니다</h1>
+    <p class="left">⏳ 이제 <b id="left">5일</b> 남았습니다</p>
   </section>
 
   <a class="together" href="#acctNum"><span class="tg1">🥬 함께해 주세요</span><span class="tg2">손을 보탠 만큼, 이웃의 겨울이 따뜻해집니다</span></a>
 
   <section class="body">
-    <div class="dday"><b id="dd">모금 마감 D-5</b><span>11. 27(금)까지 · 김장 11. 28(토)</span></div>
+    <div class="dday"><b id="dd">모금 마감 D-5</b><span>11. 27(금)까지 · 김장 11. 28(토) 08:30</span></div>
 
     <div class="gauge">
       <svg class="jar" viewBox="0 0 120 150" role="img" aria-label="김치통 모금 진행률">
@@ -157,6 +160,7 @@ h1 .r{color:#ff5a4c}
   var now=new Date(),k=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000);
   var n=Math.round((Date.UTC(2026,10,27)-Date.UTC(k.getFullYear(),k.getMonth(),k.getDate()))/86400000);
   document.getElementById('dd').textContent=n>0?'모금 마감 D-'+n:(n===0?'오늘 모금 마감':'모금 마감');
+  var L=document.getElementById('left');if(L){if(n>0)L.textContent=n+'일';else L.parentNode.innerHTML=n===0?'⏳ <b>오늘</b>이 마지막 날입니다':'함께해 주셔서 감사합니다';}
 })();
 function fillJar(p){p=Math.max(0,Math.min(100,p));var g=document.getElementById('fillG');if(g)g.style.transform='translateY('+(99-99*p/100)+'px)';var t=document.getElementById('jarPct');if(t)t.textContent=Math.round(p)+'%'}
 setTimeout(function(){fillJar(55.0)},150);
