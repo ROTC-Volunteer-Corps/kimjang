@@ -161,7 +161,7 @@ h1 .r{color:#ff5a4c}
   var now=new Date(),k=new Date(now.getTime()+(now.getTimezoneOffset()+540)*60000);
   var n=Math.round((Date.UTC(2026,10,27)-Date.UTC(k.getFullYear(),k.getMonth(),k.getDate()))/86400000);
   document.getElementById('dd').textContent=n>0?'모금 마감 D-'+n:(n===0?'오늘 모금 마감':'모금 마감');
-  var L=document.getElementById('left');if(L){if(n>0)L.textContent=n+'일';else L.parentNode.innerHTML=n===0?'⏳ <b>오늘</b>이 마지막 날입니다':'함께해 주셔서 감사합니다';}
+  var L=document.getElementById('left');if(L){if(n>0)L.textContent=n+'일';else L.parentNode.innerHTML=n===0?'⏳ <b>오늘</b>이 마지막입니다':'함께해 주셔서 감사합니다';}
 })();
 function fillJar(p){p=Math.max(0,Math.min(100,p));var g=document.getElementById('fillG');if(g)g.style.transform='translateY('+(99-99*p/100)+'px)';var t=document.getElementById('jarPct');if(t)t.textContent=Math.round(p)+'%'}
 setTimeout(function(){fillJar(55.0)},150);
