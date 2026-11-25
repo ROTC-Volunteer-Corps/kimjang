@@ -595,5 +595,15 @@ footer{padding-block:28px 110px;font-size:13px;color:var(--muted);text-align:cen
   }).catch(fail);
 })();
 </script>
+<script>
+/* 카톡 안 브라우저에서는 구글 폼이 로그인 화면을 띄우는 경우가 있어, 신청 버튼만 휴대폰 기본 브라우저로 엽니다 */
+(function(){
+  if(!/KAKAOTALK/i.test(navigator.userAgent))return;
+  document.querySelectorAll('a[href*="docs.google.com/forms"]').forEach(function(a){
+    a.href='kakaotalk://web/openExternal?url='+encodeURIComponent(a.href);
+    a.removeAttribute('target');
+  });
+})();
+</script>
 </body>
 </html>
